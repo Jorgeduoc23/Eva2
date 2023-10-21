@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">
+        <h3 class="titulo_app">TeLlevoApp<ion-icon name="car-sport-sharp"></ion-icon></h3>
+    </ion-title>    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="cuerpo3">
+
+
+  <h3 class="titulolistas">Lista de usuarios</h3>
+  <ion-list  class="cuerpo2">
+    <ion-item *ngFor ="let item of users" class="cuerpo">
+        <br>
+        <ion-avatar><img src="https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?b=1&k=20&m=1300845620&s=170667a&w=0&h=JbOeyFgAc6-3jmptv6mzXpGcAd_8xqkQa_oUK2viFr8=" alt=""></ion-avatar>
+      <div class="Textocualquiera1">
+        <!-- {{item.name}} -->
+        <br>
+        <!-- {{item.email}} -->
+       <br>
+        <!-- {{item.username}} -->
+      </div>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="warning">
+    <ion-title color="light">
+      <h3 class="pie_app">Duoc UC</h3>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
+
